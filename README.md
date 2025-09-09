@@ -36,11 +36,9 @@ Follow these steps to get the chatbot running on your website.
 
 ### Installation Guide
 
-**Step 1: Get the Project Files**
+Step 1: Get the Project Files
 
 Clone this repository or download the files to your computer.
-
-```bash
 git clone https://github.com/panda-Shubham/AI-chatBot.git
 
 
