@@ -36,13 +36,13 @@ Follow these steps to get the chatbot running on your website.
 
 ### Installation Guide
 
-Step 1: Get the Project Files
+**Step 1: Get the Project Files**
 
 Clone this repository or download the files to your computer.
 git clone https://github.com/panda-Shubham/AI-chatBot.git
 
 
-Step 2: Arrange the Folder Structure
+**Step 2: Arrange the Folder Structure**
 
 my_awesome_website/
 │
@@ -60,7 +60,7 @@ my_awesome_website/
     └── requirements.txt                    <-- The list of Python packages.
 
 
-Step 3: Set Up the Backend
+**Step 3: Set Up the Backend**
 
 This is where you'll install the necessary Python libraries.
 Navigate to the backend folder in your terminal or command prompt:
@@ -76,14 +76,16 @@ Install the required libraries from the requirements.txt file:
 "pip install -r requirements.txt"
 (If you don't have a requirements.txt file, create one and add these lines: openai, flask, PyPDF2, python-dotenv, flask-cors)
 
-Step 4: Integrate the Frontend
+**Step 4: Integrate the Frontend**
 Open your website's main index.html file and add the following two lines right before the closing </body> tag.
 ...
     <link rel="stylesheet" href="ai_chat_widget_styles.css">
     <script src="ai_chat_widget_script.js"></script>
 </body>
 </html>
-Configuration
+
+
+###Configuration
 Add Your Knowledge: Replace the placeholder website_knowledge_base.pdf file inside the my_chatbot_app folder with your own PDF containing all the information you want the chatbot to know.
 API Key: The first time you run the backend server, it will prompt you to enter your OpenRouter API key in the terminal. It will be securely saved in a .env file for future use.
 Running the Application
@@ -91,7 +93,7 @@ Start the Backend Server: In your terminal, make sure you are in the my_chatbot_
 "python gemini_chatbot_backend_service.py"
 You should see a message confirming that the server is running on http://127.0.0.1:5001.
 View Your Website: Open your index.html file directly in your web browser (e.g., by double-clicking it). Do not navigate to the server URL in your browser. The chatbot bubble should appear in the bottom-right corner.
-Troubleshooting
+###Troubleshooting
 Q: The chatbot says "Sorry, I'm having trouble connecting..."
 A: Look at the terminal running the Python script. It will show the exact error. This is often caused by an invalid API key or an issue with your OpenRouter account.
 Q: My terminal shows a 402 Payment Required or "token" error.
